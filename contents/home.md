@@ -1,17 +1,17 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![javeybae](https://img.shields.io/badge/javeybae-github-blue?logo=github)](https://github.com/javeybae)
 
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+He is currently a Master Student in the Faculty of Business, Economics and Informatics of  at  University of Zurich.
 
 #### Contact
 
-Email: senli[at]fas.harvard.edu
+Email: jiawei.pei@uzh.ch
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+M.E., Computer Science, University of Zurich, 2024—2026.\
+B.E.,Electronic Engineering, Wuhan University, 2019—2023.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Deep Learning, Artificial Intelligence 
 
