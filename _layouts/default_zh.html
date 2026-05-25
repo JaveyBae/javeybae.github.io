@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <title>{{ site.name }}</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:0">
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5% 2.5% 0 2.5%;text-align:right;font-size:small;">
+              <a href="{{ site.baseurl }}/">English</a>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:62%;vertical-align:middle">
+              <h1>{{ site.name }}</h1>
+              <p>
+                我目前是苏黎世大学商业、经济与信息学院的计算机科学硕士研究生。
+              </p>
+              <p>
+                我的研究兴趣包括深度学习和人工智能。
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:{{ site.email }}">邮箱</a>
+                &nbsp;/&nbsp;
+                <a href="{{ site.github_url }}">GitHub</a>
+                {% if site.resume_url_zh %}
+                &nbsp;/&nbsp;
+                <a href="{{ site.resume_url_zh }}" target="_blank">简历</a>
+                {% endif %}
+                {% if site.scholar_url %}
+                &nbsp;/&nbsp;
+                <a href="{{ site.scholar_url }}">Google Scholar</a>
+                {% endif %}
+                {% if site.linkedin_url %}
+                &nbsp;/&nbsp;
+                <a href="{{ site.linkedin_url }}">LinkedIn</a>
+                {% endif %}
+              </p>
+            </td>
+            <td style="padding:2.5%;width:38%;max-width:38%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="{{ site.baseurl }}/{{ site.avatar }}">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>研究方向</h2>
+              <p>深度学习，人工智能</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>教育经历</h2>
+              <p><strong>计算机科学硕士</strong>，苏黎世大学，2024-2026。</p>
+              <p><strong>电子工程学士</strong>，武汉大学，2019-2023。</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>论文与项目</h2>
+              {% if site.posts.size > 0 %}
+              <p>以下列出部分论文与项目。</p>
+              {% else %}
+              <p>论文与项目条目将会添加在这里。</p>
+              {% endif %}
+            </td>
+          </tr>
+        </table>
+
+        {% for post in site.posts %}
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            {% if post.image %}
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{ post.image }}" alt="project image" style="width:auto;height:auto;max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            {% else %}
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            {% endif %}
+              <h3>{{ post.title }}</h3>
+              {% if post.authors %}
+              {{ post.authors }}
+              <br>
+              {% endif %}
+              {% if post.venue %}
+              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{ post.paper }}">paper</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{ post.arxiv }}">arxiv</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{ post.code }}">code</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{ post.website }}">website</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+        </table>
+        {% endfor %}
+
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>荣誉奖项</h2>
+              <p>CUMT 优秀毕业生，2025。</p>
+              <p>研究生国家奖学金，2024。</p>
+              <p>CUMT 一等奖学金，2024。</p>
+              <p>CUMT 一等奖学金，2023。</p>
+              <p>新生奖学金，2022。</p>
+              <p>江苏省优秀毕业设计奖，2022。</p>
+              <p>CUMT 企业一等奖学金，2020。</p>
+              <p>CUMT 一等奖学金，2019。</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                页面设计和源码改编自
+                <a style="font-size:small;" href="https://jonbarron.info">Jon Barron 的个人主页</a>。
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

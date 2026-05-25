@@ -1,0 +1,68 @@
+# Site identity
+name: Jiawei Pei
+title: Jiawei Pei
+description: Personal academic homepage
+avatar: images/jiawei-pei.png
+
+# Contact and profile links
+email: jiawei.pei@uzh.ch
+github_username: JaveyBae
+github_url: https://github.com/JaveyBae
+resume_url: /data/resume.pdf
+resume_url_zh: /data/cv_zh.pdf
+scholar_url:
+linkedin_url:
+
+# Website URL for GitHub Pages
+url: "https://javeybae.github.io"
+baseurl: ""
+
+# Homepage content
+research_interests:
+  - Deep Learning
+  - Artificial Intelligence
+
+education:
+  - degree: M.E., Computer Science
+    school: University of Zurich
+    years: 2024-2026
+  - degree: B.E., Electronic Engineering
+    school: Wuhan University
+    years: 2019-2023
+
+awards:
+  - Outstanding Graduate Award (CUMT), 2025.
+  - National Scholarship for Graduate Student, 2024.
+  - First-Prize Scholarship (CUMT), 2024.
+  - First-Prize Scholarship (CUMT), 2023.
+  - Freshman Scholarship (CUMT), 2022.
+  - Outstanding Graduation Project Award (Jiangsu Province), 2022.
+  - First-Prize Enterprise Scholarship (CUMT), 2020.
+  - First-Prize Scholarship (CUMT), 2019.
+
+# Jekyll settings
+permalink: /:title/
+version: v1.2.0
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - _site
+  - command.txt
+  - todo.txt
+  - vendor
