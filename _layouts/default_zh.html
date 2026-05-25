@@ -70,76 +70,8 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>教育经历</h2>
-              <p><strong>计算机科学硕士</strong>，苏黎世大学，2024-2026。</p>
+              <p><strong>计算机科学理学硕士</strong>，苏黎世大学，2024-2026。</p>
               <p><strong>电子工程学士</strong>，武汉大学，2019-2023。</p>
-            </td>
-          </tr>
-        </table>
-
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>论文与项目</h2>
-              {% if site.posts.size > 0 %}
-              <p>以下列出部分论文与项目。</p>
-              {% else %}
-              <p>论文与项目条目将会添加在这里。</p>
-              {% endif %}
-            </td>
-          </tr>
-        </table>
-
-        {% for post in site.posts %}
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            {% if post.image %}
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{ post.image }}" alt="project image" style="width:auto;height:auto;max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-            {% else %}
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-            {% endif %}
-              <h3>{{ post.title }}</h3>
-              {% if post.authors %}
-              {{ post.authors }}
-              <br>
-              {% endif %}
-              {% if post.venue %}
-              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{ post.paper }}">paper</a> /
-              {% endif %}
-              {% if post.arxiv %}
-              <a href="{{ post.arxiv }}">arxiv</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{ post.code }}">code</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{ post.website }}">website</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-        </table>
-        {% endfor %}
-
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>荣誉奖项</h2>
-              <p>CUMT 优秀毕业生，2025。</p>
-              <p>研究生国家奖学金，2024。</p>
-              <p>CUMT 一等奖学金，2024。</p>
-              <p>CUMT 一等奖学金，2023。</p>
-              <p>新生奖学金，2022。</p>
-              <p>江苏省优秀毕业设计奖，2022。</p>
-              <p>CUMT 企业一等奖学金，2020。</p>
-              <p>CUMT 一等奖学金，2019。</p>
             </td>
           </tr>
         </table>

@@ -23,22 +23,12 @@ research_interests:
   - Artificial Intelligence
 
 education:
-  - degree: M.E., Computer Science
+  - degree: M.Sc., Computer Science
     school: University of Zurich
     years: 2024-2026
   - degree: B.E., Electronic Engineering
     school: Wuhan University
     years: 2019-2023
-
-awards:
-  - Outstanding Graduate Award (CUMT), 2025.
-  - National Scholarship for Graduate Student, 2024.
-  - First-Prize Scholarship (CUMT), 2024.
-  - First-Prize Scholarship (CUMT), 2023.
-  - Freshman Scholarship (CUMT), 2022.
-  - Outstanding Graduation Project Award (Jiangsu Province), 2022.
-  - First-Prize Enterprise Scholarship (CUMT), 2020.
-  - First-Prize Scholarship (CUMT), 2019.
 
 # Jekyll settings
 permalink: /:title/
