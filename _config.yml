@@ -30,6 +30,12 @@ education:
     school: Wuhan University
     years: 2019-2023
 
+experience:
+  - role: "LLM Algorithm Engineer (Intern)"
+    company: OPPO
+    years: "Mar 2026 - Jun 2026"
+    description: "Post-training pipeline (SFT, knowledge distillation, GRPO / weighted-DPO) for on-device smart-reply generation in the Breeno smart input method."
+
 # Jekyll settings
 permalink: /:title/
 version: v1.2.0

@@ -85,6 +85,20 @@
 
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Experience</h2>
+              {% for item in site.experience %}
+              <p>
+                <strong>{{ item.role }}</strong>, {{ item.company }}, {{ item.years }}.
+                {% if item.description %}<br>{{ item.description }}{% endif %}
+              </p>
+              {% endfor %}
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
             <td style="padding:0">
               <br>
               <p style="text-align:center;font-size:small;">
